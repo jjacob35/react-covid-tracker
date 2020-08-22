@@ -2,14 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 // import LineChartComp from './components/LineChartComp'
-import PositiveIncreaseChart from './components/PositiveIncreaseChart'
-import PosIncGAChart from './components/PosIncGAChart'
+import Dashboard from './components/bootstrapcomps/Dashboard'
 
 function App() {
   return (
     <div className="App">
-      <PositiveIncreaseChart />
-      <PosIncGAChart />
+      <Dashboard />
     </div>
   );
 }

@@ -66,6 +66,13 @@ class LineChartComp extends React.Component {
     }
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.data !== this.props.data) {
+      console.log("Did update")
+      this.setState({labls:this.props.labels , data: this.props.data})
+    }
+  }
+
   buildChart(labs, data) {
     return (<div style={styles.graphContainer}>
         <LineChart data={chartData(labs, data)}
